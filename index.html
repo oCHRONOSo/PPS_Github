@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Security Quest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-screen">
+    <h1 class="title">GitHub Security Quest</h1>
+    <p class="subtitle">Level up your repo defense</p>
+
+    <section class="card">
+      <h2>Top Security Moves</h2>
+      <ul class="tips" id="tipsList">
+        <li>Use strong, unique passwords and a password manager.</li>
+        <li>Enable 2FA on your GitHub account.</li>
+        <li>Use fine-grained personal access tokens.</li>
+        <li>Never commit secrets like API keys or `.env` files.</li>
+        <li>Turn on Dependabot and security alerts.</li>
+      </ul>
+    </section>
+
+    <section class="card controls">
+      <h2>Practice Mode</h2>
+      <p id="challengeText">Press start to get a random security challenge.</p>
+      <button id="challengeBtn" type="button">Start Challenge</button>
+    </section>
+
+    <footer class="footer-text">Stay patched. Stay protected.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
