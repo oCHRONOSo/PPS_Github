@@ -1,0 +1,9 @@
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+.venv/
+
+# Log files
+*.log
+flask_example/logs/
+gitleaks.exe

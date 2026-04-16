@@ -18,6 +18,19 @@ function randomChallenge() {
 
 challengeBtn.addEventListener("click", () => {
   challengeText.textContent = randomChallenge();
+  fetch("/generate-log")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to write log");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Backend logging status:", data.status);
+    })
+    .catch((error) => {
+      console.error("Log endpoint error:", error.message);
+    });
 });
 
 // Highlight risky keywords in the tips list.
